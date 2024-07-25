@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bld.katana.mapper.PartMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.bld.entity.Part">
+        <id column="part_id" property="partId" />
+        <result column="part_name" property="partName" />
+        <result column="description" property="description" />
+        <result column="cost" property="cost" />
+        <result column="supplier_id" property="supplierId" />
+        <result column="stock" property="stock" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        part_id, part_name, description, cost, supplier_id, stock
+    </sql>
+
+    <select id="pageC" resultType="com.bld.entity.Part">
+        select * from part
+    </select>
+
+</mapper>

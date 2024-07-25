@@ -1,0 +1,111 @@
+html.dark {
+    /* override from web */
+    /* --el-bg-color: #2f2f2f; */
+
+
+    /* self */
+
+
+    --el-card-bg-color: #262727;
+
+
+
+    --el-menu-bg-color: #1D1E1F;
+    --el-menu-text-color: #fff;
+    --el-menu-hover-bg-color: #424243;
+
+    --menu-icon-svg-hover-bg-color: #424243;
+
+
+
+    /* useless? */
+    --el-table-bg-color: #2f2f2f;
+    --el-table-tr-bg-color: #39393a;
+
+
+    .menu-icon-svg {
+        margin: 20px;
+        fill: #e8eaed;
+    }
+
+    .menu-icon-svg:hover {
+        background-color: var(--menu-icon-svg-hover-bg-color);
+        border-radius: 50%;
+        margin: 10px;
+        padding: 10px
+    }
+
+
+    .el-aside {
+        background-color: var(--el-menu-bg-color);
+    }
+
+    .el-popover{
+        --el-popover-padding: 0px;
+    }
+
+}
+
+
+html.light {
+
+    --el-text-color-secondary: black;
+
+    /* --el-bg-color */
+
+
+    /* --el-table-header-bg-color: #f5f7fa; */
+    /* --el-bg-color: #f5f7fa; */
+    /* --el-table-tr-bg-color: #ffffff; */
+
+
+
+    /* --el-menu-hover-bg-color: #c6e2ff; */
+    --el-menu-hover-bg-color: var(--menu-icon-svg-hover-bg-color);
+
+    --el-menu-bg-color: #f2f6fa;
+
+
+    --menu-icon-svg-hover-bg-color: #e2e3e6;
+
+
+    .menu-icon-svg {
+        margin: 20px;
+        background-color: Transparent;
+        position: relative;
+        fill: black;
+    }
+
+    .menu-icon-svg:hover {
+        background-color: var(--menu-icon-svg-hover-bg-color);
+        border-radius: 50%;
+        margin: 10px;
+        padding: 10px;
+        color: white;
+    }
+
+    .el-aside {
+        background-color: var(--el-menu-bg-color);
+    }
+
+    .el-popover{
+        --el-popover-padding: 2px;
+    }
+
+}
+
+
+html.light .el-table th {
+    background-color: #f5f7fa !important;
+}
+
+
+html.dark .el-table th {
+    background-color: #262727 !important;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
